@@ -8,6 +8,11 @@ sudo update-grub
 -- restart the PC
 ```
 
+#### Fix problem - SNMP Restart
+```
+sudo nano /etc/rc.local
+service snmpd restart
+```
 
 
 ####  Install Google Chrome
