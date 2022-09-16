@@ -1,5 +1,15 @@
 ### Ubuntu 22.04 LTS
 
+#### Fix problem - Wireless Mouse not working smoothly
+```
+sudo nano /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.nomux i8024.noloop"
+sudo update-grub
+-- restart the PC
+```
+
+
+
 ####  Install Google Chrome
 ```
 sudo apt install wget
