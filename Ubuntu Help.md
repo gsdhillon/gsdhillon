@@ -21,13 +21,15 @@ sudo apt install goldendict
 - Will take 1-2 minutes to install
 - Hotkeys ctrl+C+C  Press and hold ctrl and type C twice with any delay in between
 
-#### Diagnostic commands
+#### Commands
+* CTRL + L to see/copy path of file explorer
 ```
 free -m
 vmstat -s
-top –i    ---- cntl + C
+top –i    ---- cntl + C to exit
+systemctl start/stop/restart/enable/disable servicename
+ls -la ~/MyOnlineExam/ | grep .sql
 ```
-
 
 #### Fix problem - Wireless Mouse not working smoothly
 - First try to change usb port. Preferably at front side.
@@ -49,8 +51,6 @@ sudo nano /etc/sensors3.conf
 sensors
 ```
 - Use sesonrs command to monitor CPU temp. etc.
-
-
 
 #### Fix problem - SNMP Restart
 ```
