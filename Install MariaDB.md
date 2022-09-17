@@ -1,10 +1,10 @@
-##### Install MariaDB 10
+#### Install MariaDB 10
 ```
 sudo apt update
 sudo apt install mariadb-server
 sudo mysql_secure_installation
 ```
-Important entries:
+* Important entries:
 1. Switch to unix_socket authentication [Y/n] n
 2. Change the root password? [Y/n] y
 3. Remove anonymous users? [Y/n] y
@@ -12,27 +12,37 @@ Important entries:
 5. Remove test database and access to it? [Y/n] y
 6. Reload privilege tables now? [Y/n] y
 
-Open MySQL shell and create datbase
+#### Restore database backup
+1. Open MySQL shell and create datbase
 ```
 mysql -u root -p
 > create database myonlineexam;
 > exit
 ```
-Restore database backup
+2. Restore database backup
 ```
 mysql -u root -p myonlineexam < ~/MyOnlineExam/myonlineexam.sql
 ```
-In case Unknown collation error comes 
+3. Resolving unknown collation error comes with follwing message:
+```
 ERROR 1273 (HY000) at line 273: Unknown collation: 'utf8mb4_0900_ai_ci'
-- First check how many times this collation is used
+```
+4. Check how many times this collation is used
 ```
 cat ~/MyOnlineExam/myonlineexam.sql | grep utf8mb4_0900_ai_ci
 ```
-Replace utf8mb4_0900_ai_ci with utf8mb4_general_ci using sed stream editor.
+5. Replace utf8mb4_0900_ai_ci with utf8mb4_general_ci using sed stream editor.
 ```
 sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_general_ci/g' ~/MyOnlineExam/myonlineexam.sql
 ```
-Try the restore back command again.
+6. Try the restore back command again.
+
+#### Taking backup 
+--- 
+mysqldump -u root -p myonlineexam > ~/MyOnlineExam/myonlineexam.sql
+```
+* Push the myonlineexam.sql file immediately to the server (github etc.)
+
 
 #### Connect MySQL with Netbeans
 1. Open Services > Databases > Drivers > MySQL (Connector/J Driver)
