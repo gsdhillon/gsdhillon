@@ -36,6 +36,7 @@ top –i    ---- cntl + C
 ```
 sudo nano /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.nomux i8024.noloop"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash irqpoll"
 sudo update-grub
 -- restart the PC
 ```
