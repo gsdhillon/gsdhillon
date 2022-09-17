@@ -7,6 +7,13 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb 
 ```
 
+#### Install Pinta for Image Editing
+-- Useful to crop imaging, making transparent images, adding some text on images etc.
+-- Selecting boundary is nice
+```
+sudo apt install pinta
+```
+
 #### Install Word Dictionary
 ```
 sudo apt install goldendict
