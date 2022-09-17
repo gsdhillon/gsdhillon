@@ -38,19 +38,10 @@ sed -i 's/utf8mb4_0900_ai_ci/utf8mb4_general_ci/g' ~/MyOnlineExam/myonlineexam.s
 6. Try the restore back command again.
 
 #### Taking backup 
---- 
+``` 
 mysqldump -u root -p myonlineexam > ~/MyOnlineExam/myonlineexam.sql
 ```
 * Push the myonlineexam.sql file immediately to the server (github etc.)
-
-
-#### Connect MySQL with Netbeans
-1. Open Services > Databases > Drivers > MySQL (Connector/J Driver)
-2. Click Add button and provide path to jar file: /home/gurmeet/MyOnlineExam/jars/mysql-connector-java-8.0.17.jar
-3. Click Next. Enter database Host: localhost, Port: 3306, Database: myonlineexam, User: root, Pass: Fw0rkal$ and click Test Connection.
-4. Click Finish
-
-
 
 #### Resolve Table Names Case Senstivity Problem - On Linux
 
@@ -70,6 +61,15 @@ Restart the mariadb service and check the value of lower_case_table_names as fol
 systemctl restart mariadb
 sudo mysqladmin -u root -p variables | grep lower_case_table_names
 ```
+
+---
+#### Connect MySQL with Netbeans
+1. Open Services > Databases > Drivers > MySQL (Connector/J Driver)
+2. Click Add button and provide path to jar file: /home/gurmeet/MyOnlineExam/jars/mysql-connector-java-8.0.17.jar
+3. Click Next. Enter database Host: localhost, Port: 3306, Database: myonlineexam, User: root, Pass: Fw0rkal$ and click Test Connection.
+4. Click Finish
+
+
 
 
 
