@@ -28,7 +28,7 @@ free -m
 vmstat -s
 top –i    ---- cntl + C to exit
 systemctl start/stop/restart/enable/disable servicename
-ls -la ~/MyOnlineExam/ | grep .sql
+ls -lah ~/MyOnlineExam/ | grep .sql     --- -h option for human readable form
 ```
 
 #### Fix problem - Wireless Mouse not working smoothly
