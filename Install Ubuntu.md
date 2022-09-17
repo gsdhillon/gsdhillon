@@ -1,6 +1,23 @@
 ### Ubuntu 22.04 LTS
 
+####  Install Google Chrome
+```
+sudo apt install wget
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
+```
+
+#### Install Word Dictionary
+```
+sudo apt install goldendict
+```
+- Will take 1-2 minutes to install
+- Hotkeys ctrl+C+C  Press and hold ctrl and type C twice with any delay in between
+
 #### Fix problem - Wireless Mouse not working smoothly
+- First try to change usb port. Preferably at front side.
+- Check battery of the mouse also. Mouse consumes more battery than keyboard.
+- If stillslow try to change following settings.
 ```
 sudo nano /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash i8042.nomux i8024.noloop"
@@ -8,22 +25,21 @@ sudo update-grub
 -- restart the PC
 ```
 
+#### Install lm-sensors to monitor PC hardware
+```
+sudo apt-get install lm-sensors
+sudo sensors-detect
+sudo nano /etc/sensors3.conf
+sensors
+```
+- Use sesonrs command to monitor CPU temp. etc.
+
+
+
 #### Fix problem - SNMP Restart
 ```
 sudo nano /etc/rc.local
 service snmpd restart
-```
-
-
-####  Install Google Chrome
-```
-sudo apt install wget
-```
-```
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-```
-```
-sudo dpkg -i google-chrome-stable_current_amd64.deb 
 ```
 
 
