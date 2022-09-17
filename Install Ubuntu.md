@@ -21,6 +21,14 @@ sudo apt install goldendict
 - Will take 1-2 minutes to install
 - Hotkeys ctrl+C+C  Press and hold ctrl and type C twice with any delay in between
 
+#### Diagnostic commands
+```
+free -m
+vmstat -s
+top –i    ---- cntl + C
+```
+
+
 #### Fix problem - Wireless Mouse not working smoothly
 - First try to change usb port. Preferably at front side.
 - Check battery of the mouse also. Mouse consumes more battery than keyboard.
