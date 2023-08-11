@@ -35,6 +35,16 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsAzefobWPcF1CK60T7kT0jCMNHsaG9Itsu8l51+T1
  - Click on 'Add SSH Key'
  - New SSH key will apear. SHA256:/Uv/LaozGObWT4y2c+KYSUU5y4wYfirmRVRtY9DxOGA
 
+#### Generated SSH Key on IshLaptop 10/08/2023
+
+ - Open Git Bash
+```
+$ ssh-keygen -t ed25519 -C "gsdhillon@gmail.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_ed25519
+```
+- Registered public key is at ~/.ssh/id_ed25519.pub on Github
+
 
 #### Clone a repository at PC
 - Copy the SSH link from Github 
