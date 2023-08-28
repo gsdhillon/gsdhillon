@@ -21,7 +21,7 @@ $ cat id_ed25519.pub
 ### Registered public key on Github
 
 * gsdhillon > Settings > SSH PGP Keys >  Add SSH Key >  Paste content of ~/.ssh/id_ed25519.pub
-* 
+* Test by git clone 
 
 
 # Generated SSH Key at Circle PC - Ubuntu 22.04
