@@ -1,3 +1,10 @@
+# Windows 11
+### From Administrator A/C : Settings > Apps > Apps Adv Settings > Where to get apps [Anywhere] 
+### Download jdk17.exe and install
+### Download Netbeas17.exe and install
+
+# Ubuntu
+
 ####  Install Open JDK-9
 - Download https://download.java.net/java/GA/jdk9/9.0.1/binaries/openjdk-9.0.1_linux-x64_bin.tar.gz    - size 206 MB
 ```
