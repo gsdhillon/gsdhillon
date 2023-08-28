@@ -18,7 +18,11 @@ Identity added: /c/Users/Ishjyot/.ssh/id_ed25519 (gsdhillon@gmail.com)
 $ cd ~/.ssh/
 $ cat id_ed25519.pub
 ```
-### Registered public key [content of ~/.ssh/id_ed25519.pub] on Github
+### Registered public key on Github
+
+* gsdhillon > Settings > SSH PGP Keys >  Add SSH Key >  Paste content of ~/.ssh/id_ed25519.pub
+* 
+
 
 # Generated SSH Key at Circle PC - Ubuntu 22.04
 ```
