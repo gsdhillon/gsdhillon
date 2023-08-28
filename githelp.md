@@ -1,6 +1,26 @@
-### Git Help
+# Install Git on Windows 11
 
-#### Generated SSH Key at Circle PC - Ubuntu 22.04
+### Download Git64.exe and install [All Default Settings]
+
+
+# Generated SSH Key on Windows 11
+
+ ### Ringh click in D:\  > Show more options >  Git Bash Here
+```
+$ ssh-keygen -t ed25519 -C "gsdhillon@gmail.com"
+Enter file in which to save the key (/c/Users/Ishjyot/.ssh/id_ed25519):   [Enter]
+[Enter]
+[Enter]
+$ eval "$(ssh-agent -s)"
+Agent pid 1147
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/Ishjyot/.ssh/id_ed25519 (gsdhillon@gmail.com)
+$ cd ~/.ssh/
+$ cat id_ed25519.pub
+```
+### Registered public key [content of ~/.ssh/id_ed25519.pub] on Github
+
+# Generated SSH Key at Circle PC - Ubuntu 22.04
 ```
 $ cd ~/.ssh
 $ ls
@@ -35,15 +55,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCsAzefobWPcF1CK60T7kT0jCMNHsaG9Itsu8l51+T1
  - Click on 'Add SSH Key'
  - New SSH key will apear. SHA256:/Uv/LaozGObWT4y2c+KYSUU5y4wYfirmRVRtY9DxOGA
 
-#### Generated SSH Key on IshLaptop 10/08/2023
 
- - Open Git Bash
-```
-$ ssh-keygen -t ed25519 -C "gsdhillon@gmail.com"
-$ eval "$(ssh-agent -s)"
-$ ssh-add ~/.ssh/id_ed25519
-```
-- Registered public key is at ~/.ssh/id_ed25519.pub on Github
 
 
 #### Clone a repository at PC
