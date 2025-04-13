@@ -1,7 +1,12 @@
-# Windows 11
-### From Administrator A/C : Settings > Apps > Apps Adv Settings > Where to get apps [Anywhere] 
-### Download jdk17.exe and install
-### Download Netbeas17.exe and install
+### Install on Windows 11
+* From Administrator A/C : Settings > Apps > Apps Adv Settings > Where to get apps [Anywhere] 
+* Download jdk21.exe and install
+* Download Netbeas25.exe and install. Open notepad as Administrator > open C:Prog..Files/Netbeans/etc/netbeans.conf and following :
+```
+netbeans_default_options="-J-Xms256m -J-Xmx2048m -J-XX:MaxPermSize=256m ...... keep other params "
+```
+* Install Tomee separately and use Add Server.
+  
 
 # Ubuntu
 
