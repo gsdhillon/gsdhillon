@@ -5,6 +5,7 @@
 ```
 mysql -u root -p
 ```
+* Heidi SQL will be installed auomatically along with MariaDB.
 
 ### Install MariaDB 10 on Ubuntu
 ```
