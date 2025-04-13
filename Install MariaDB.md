@@ -1,4 +1,12 @@
-#### Install MariaDB 10
+### Install MariaDB 10 on Windows
+* Download MariaDB Server 10.4.7 msi setup and install.
+* Add MariaDB Server 10.4.7 in system path env.
+* on cammand prompt run follwing command to check:
+```
+mysql -u root -p
+```
+
+### Install MariaDB 10 on Ubuntu
 ```
 sudo apt update
 sudo apt install mariadb-server
