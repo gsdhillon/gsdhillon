@@ -2,5 +2,5 @@
 * Downlad https://www.mongodb.com/try/download/community
 * Install using msiexec.exe as follows (hangs at Time remaining: 17 secs):
 ```
-msiexec.exe /l*v mdbinstall.log  /qb /i mongodb-windows-x86_64-8.0.6-signed.msi
+msiexec.exe /l*v mdbinstall.log  /qb /i mongodb-windows-x86_64-8.0.6-signed.msi SHOULD_INSTALL_COMPASS="0"
 ```
