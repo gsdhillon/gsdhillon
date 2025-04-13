@@ -9,8 +9,9 @@ msiexec.exe /l*v mdbinstall.log  /qb /i mongodb-windows-x86_64-8.0.6-signed.msi 
 #### Start MongoDB service
 * Run cmd as Administrator and run following command:
 ```
+-- start service. it will use db path as specified in C:\Program Files\MongoDB\Server\8.0\bin\mongod.cfg
 net start MongoDB
--- could not run following
+-- or start from command line itself by specifying path to db
 mongod --dbpath="D:\mongodbdata"
 ```
 
