@@ -1,6 +1,6 @@
-# Install tomcat on Windows 11
-### Download apache-tomcat-9.0.80-windows-x64.zip from Apache site
-### Unzip at D:\Ishjyot\apache-tomcat-9.0.80
+# Install tomcat/tomee on Windows 11
+### Download apache-tomcat-9.0.80-windows-x64.zip/apache-tomee-10.0.1-plume.zip from Apache site
+### Unzip at D:\Ishjyot\apache-tom...
 ### Set Env 
 * JRE_HOME = C:\Program Files\Java\jdk-17
 * CATALINA_HOME = D:\Ishjyot\apache-tomcat-9.0.80
