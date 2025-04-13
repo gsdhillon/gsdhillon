@@ -9,8 +9,11 @@ msiexec.exe /l*v mdbinstall.log  /qb /i mongodb-windows-x86_64-8.0.6-signed.msi 
 #### Start MongoDB service
 * Run cmd as Administrator and run following command:
 ```
+net start MongoDB
+-- could not run following
 mongod --dbpath="D:\mongodbdata"
 ```
+
 
 #### Connect to MongoDB using mongosh
 * Doanload mongosh-2.5.0-x64.msi from https://www.mongodb.com/try/download/shell. Run the setup.
